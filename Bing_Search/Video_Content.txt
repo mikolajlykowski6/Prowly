@@ -1,0 +1,9 @@
+Feature: Bing Search with Content Category Filtering
+
+	Scenario: Search for "Prowly Media Monitoring" on Bing using "Videos" filter
+    	Given the user is on the Bing homepage
+    	When the user enters the phrase "Prowly Media Monitoring" into the search bar
+    	And the user clicks the "Search the web" button
+	And the user selects the "Videos" category
+    	Then the search results page should be displayed
+    	And all results should be video files related to "Prowly Media Monitoring"
