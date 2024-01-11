@@ -1,0 +1,9 @@
+Feature: Bing Search with Content Category Filtering
+  
+	Scenario: Search for "Prowly Media Monitoring" on Bing with News Content
+   	Given the user is on the Bing homepage
+   	When the user enters the phrase "Prowly Media Monitoring" into the search bar
+   	And the user clicks the "Search the web" button
+	And the user selects the "News" category
+    	Then the search results page should be displayed
+    	And all results should be news articles related to "Prowly Media Monitoring"
