@@ -1,0 +1,8 @@
+Feature: Bing Copilot for Gathering Information about Prowly Media Monitoring Module
+
+  Scenario: Use Copilot to Find News about Prowly Media Monitoring Module
+  Given the user is on the Bing homepage
+  When the user activates Copilot by using the copilot launch button
+  And the user enters the phrase "Find news about Prowly Media Monitoring Module"
+  Then Copilot should search for the news related to the media monitoring module in Prowly
+  And the search results should be displayed on the screen
