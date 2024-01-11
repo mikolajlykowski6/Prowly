@@ -3,6 +3,6 @@ Feature: Bing Search with Content Category Filtering
   	Scenario: Search for "Prowly Media Monitoring" on Bing with All Content
     	Given the user is on the Bing homepage
     	When the user enters the phrase "Prowly Media Monitoring" into the search bar
-    	And the user clicks the enter button
+    	And the user clicks the "Search the web" button
     	Then the search results page should be displayed
     	And the results should contain content of different types
